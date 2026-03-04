@@ -176,6 +176,65 @@ const socialImgs = [
 const myProjects = [
   {
     id: 1,
+    title: "Ecommerce APP (DressyDrops)",
+    description: "",
+    subDescription: [
+      "Full Stack eCommerce application built with MERN Stack (React, Node.js, Express, MongoDB).",
+
+      "Features product browsing, filtering, sorting, cart management and variant selection (size).",
+
+      "Integrated secure online payments with Stripe and Cash on Delivery option.",
+
+      "Includes Admin Dashboard for product management and deployed online on Vercel.",
+    ],
+    href: "https://dressydrops-frontend.vercel.app/",
+    logo: "",
+    image: "/images/project1.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/images/react.svg",
+      },
+      {
+        id: 2,
+        name: "React Router",
+        path: "/images/react_router.png",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/images/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/images/mongodb.png",
+      },
+      {
+        id: 5,
+        name: "NodeJs",
+        path: "/images/nodejs.png",
+      },
+      {
+        id: 5,
+        name: "ExpressJs",
+        path: "/images/expressjs.png",
+      },
+      {
+        id: 7,
+        name: "Stripe",
+        path: "/images/stripe.png",
+      },
+      {
+        id: 8,
+        name: "Git",
+        path: "/images/git.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "AI Resume Analyzer",
     description: "",
     subDescription: [
@@ -217,7 +276,7 @@ const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Urban Dashboard",
     description:
       "Interactive GIS Dashboard for Urban Facility Monitoring and Spatial Analysis.",
@@ -258,7 +317,7 @@ const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Movie Search Project",
     description: "A simple web page that allows users to search for movies.",
     subDescription: [],
@@ -290,7 +349,7 @@ const myProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Job Board",
     description:
       "A web application that allows users to search and get new opportunities easy and fast.",
@@ -327,7 +386,7 @@ const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Invoice Management App",
     description: "",
     subDescription: [
@@ -402,75 +461,75 @@ const myProjects = [
       },
     ],
   },
-  {
-    id: 7,
-    title: "Ecommerce Web",
-    description:
-      "The E-Commerce project built with Spring Boot, Angular, JWT Authentication, and MariaDB is an innovative web application that allows users to browse and purchase a wide range of products.",
-    subDescription: [],
-    href: "https://github.com/hafsa2022/ecommerce-website-frontend",
-    logo: "",
-    image: "/images/project7.png",
-    tags: [
-      {
-        id: 1,
-        name: "Angular",
-        path: "/images/angular.png",
-      },
-      {
-        id: 2,
-        name: "Spring Boot",
-        path: "/images/spring_boot.png",
-      },
-      {
-        id: 3,
-        name: "MariaDB",
-        path: "/images/mariadb.png",
-      },
-      {
-        id: 4,
-        name: "JWT Auth",
-        path: "/images/jwt.png",
-      },
-      {
-        id: 5,
-        name: "Git",
-        path: "/images/git.svg",
-      },
-    ],
-  },
-  {
-    id: 8,
-    title: "URL Shortener",
-    description:
-      "A web page that allows users to shorten long URLs into shorter and easy-to-share links.",
-    subDescription: [],
-    href: "https://github.com/hafsa2022/url-shortener-frontend",
-    logo: "",
-    image: "/images/project8.png",
-    tags: [
-      {
-        id: 1,
-        name: "Angular",
-        path: "/images/angular.png",
-      },
-      {
-        id: 2,
-        name: "Laravel",
-        path: "/images/laravel.png",
-      },
-      {
-        id: 3,
-        name: "CSS",
-        path: "/images/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Git",
-        path: "/images/git.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   title: "Ecommerce Web",
+  //   description:
+  //     "The E-Commerce project built with Spring Boot, Angular, JWT Authentication, and MariaDB is an innovative web application that allows users to browse and purchase a wide range of products.",
+  //   subDescription: [],
+  //   href: "https://github.com/hafsa2022/ecommerce-website-frontend",
+  //   logo: "",
+  //   image: "/images/project7.png",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "Angular",
+  //       path: "/images/angular.png",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Spring Boot",
+  //       path: "/images/spring_boot.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "MariaDB",
+  //       path: "/images/mariadb.png",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "JWT Auth",
+  //       path: "/images/jwt.png",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "Git",
+  //       path: "/images/git.svg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 8,
+  //   title: "URL Shortener",
+  //   description:
+  //     "A web page that allows users to shorten long URLs into shorter and easy-to-share links.",
+  //   subDescription: [],
+  //   href: "https://github.com/hafsa2022/url-shortener-frontend",
+  //   logo: "",
+  //   image: "/images/project8.png",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "Angular",
+  //       path: "/images/angular.png",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Laravel",
+  //       path: "/images/laravel.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "CSS",
+  //       path: "/images/css3.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Git",
+  //       path: "/images/git.svg",
+  //     },
+  //   ],
+  // },
 ];
 
 // const technologies = [
