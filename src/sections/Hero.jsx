@@ -1,33 +1,18 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "../constants";
-import Button from "../components/Button";
+import Button from "../components/Button"
 import HeroExperience from "../components/HeroModels/HeroExperience";
 
 const Hero = () => {
-  // useGSAP(() => {
-  //   gsap.fromTo(
-  //     ".hero-text h1",
-  //     { y: 50, opacity: 0 },
-  //     { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
-  //   );
-  // });
-  useGSAP(
-    () => {
-      gsap.fromTo(
-        ".hero-text h1",
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.2,
-          duration: 1,
-          ease: "power2.out",
-        },
-      );
-    },
-    { dependencies: [] },
-  );
+
+  useGSAP(() => {
+    gsap.fromTo(
+      ".hero-text h1",
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+    );
+  });
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -78,12 +63,10 @@ const Hero = () => {
           </div>
         </header>
         {/* RIGHT: 3D Model or Visual */}
-        {/* <figure> */}
-        <figure className="w-full h-125 md:h-150">
-          {/* <div className="hero-3d-layout w-full h-150 md:h-125 sm:h-100"> */}
-          <div className="hero-3d-layout w-full h-full">
-            <HeroExperience />
-          </div>
+        <figure>
+            <div className="hero-3d-layout">
+                <HeroExperience />
+            </div>
         </figure>
       </div>
     </section>
