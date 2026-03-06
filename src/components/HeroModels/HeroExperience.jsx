@@ -11,7 +11,7 @@ const HeroExperience = () => {
   const isMobile = useMediaQuery({ query: "(max-width:768px)" });
 
   return (
-    <SceneCanvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <SceneCanvas camera={{ position: [0, 0, 15], fov: 45 }} >
       <Suspense fallback={null}>
         <HeroLights />
         <Particles count={200} />
