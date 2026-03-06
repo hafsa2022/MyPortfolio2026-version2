@@ -4,34 +4,36 @@ import SceneCanvas from "../SceneCanvas";
 import { Room } from "./Room";
 import Particles from "./Particles";
 import HeroLights from "./HeroLights";
+import { Suspense } from "react";
 
 const HeroExperience = () => {
-    const isTablet = useMediaQuery({query: '(max-width:1024px)'});
-    const isMobile = useMediaQuery({query: '(max-width:768px)'});
+  const isTablet = useMediaQuery({ query: "(max-width:1024px)" });
+  const isMobile = useMediaQuery({ query: "(max-width:768px)" });
 
-    return (
-        <SceneCanvas camera={{ position: [0, 0, 15], fov: 45 }}>
-            <HeroLights />
-            <Particles count={200} />
-            <OrbitControls
-                enablePan={false}
-                enableZoom={!isTablet}
-                maxDistance={20}
-                minDistance={5}
-                minPolarAngle={Math.PI / 5}
-                maxPolarAngle={Math.PI / 2}
-            />
+  return (
+    <SceneCanvas camera={{ position: [0, 0, 15], fov: 45 }}>
+      <Suspense fallback={null}>
+        <HeroLights />
+        <Particles count={200} />
+        <OrbitControls
+          enablePan={false}
+          enableZoom={!isTablet}
+          maxDistance={20}
+          minDistance={5}
+          minPolarAngle={Math.PI / 5}
+          maxPolarAngle={Math.PI / 2}
+        />
 
-            <group
-                scale={isMobile ? 0.7 : 1}
-                position={[0, -3.5, 0]}
-                rotation={[0, -Math.PI / 4, 0]}
-            >
-                <Room />
-            </group>
+        <group
+          scale={isMobile ? 0.7 : 1}
+          position={[0, -3.5, 0]}
+          rotation={[0, -Math.PI / 4, 0]}
+        >
+          <Room />
+        </group>
+      </Suspense>
+    </SceneCanvas>
+  );
+};
 
-        </SceneCanvas>
-    )
-}
-
-export default HeroExperience
+export default HeroExperience;
