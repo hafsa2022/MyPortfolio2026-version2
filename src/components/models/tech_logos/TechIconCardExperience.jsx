@@ -1,7 +1,7 @@
 import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
 import * as THREE from "three";
+import SceneCanvas from "../../SceneCanvas";
 
 const TechIconCardExperience = ({ model }) => {
   const scene = useGLTF(model.modelPath);
@@ -19,7 +19,7 @@ const TechIconCardExperience = ({ model }) => {
   }, [scene]);
 
   return (
-    <Canvas>
+    <SceneCanvas camera={{ position: [0, 0, 4], fov: 45 }}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
       <spotLight
@@ -54,7 +54,7 @@ const TechIconCardExperience = ({ model }) => {
       </Float>
 
       <OrbitControls enableZoom={false} />
-    </Canvas>
+    </SceneCanvas>
   );
 };
 
